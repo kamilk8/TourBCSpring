@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/context
+        				   http://www.springframework.org/schema/context/spring-context-2.5.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<context:annotation-config />
+
+	<util:properties id="messagesProperties" location="classpath:/messages.properties" />
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- @Repository @Service....  -->
+	<context:component-scan base-package="tour.spring.bc" />
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename">
+			<value>messages</value> <!-- to jest nazwa pliku bez rozszerzenia -->
+		</property>
+	</bean>
+
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+
+		<property name="annotatedClasses">
+			<list>
+				<value>tour.spring.bc.model.vo.City</value>
+				<value>tour.spring.bc.model.vo.Region</value>
+				<value>tour.spring.bc.model.vo.Country</value>
+				<value>tour.spring.bc.model.vo.Client</value>
+				<value>tour.spring.bc.model.vo.FoodType</value>
+				<value>tour.spring.bc.model.vo.Hotel</value>
+				<value>tour.spring.bc.model.vo.Place</value>
+				<value>tour.spring.bc.model.vo.Reservation</value>
+				<value>tour.spring.bc.model.vo.Room</value>
+				<value>tour.spring.bc.model.vo.RoomType</value>
+				<value>tour.spring.bc.model.vo.Season</value>
+				<value>tour.spring.bc.model.vo.SeasonType</value>
+				<value>tour.spring.bc.model.vo.Tour</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="show_sql">true</prop>
+				<prop key="dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+				<prop key="hibernate.transaction.flush_before_completion">true</prop>
+				<prop key="hibernate.transaction.auto_close_session">false</prop>
+				<prop key="hibernate.use_sql_comments">true</prop>
+				<prop key="hibernate.connection.release_mode">auto</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop> <!-- create-drop  -->
+
+			</props>
+		</property>
+	</bean>
+
+</beans>

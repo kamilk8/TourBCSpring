@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.044" errors="1" skipped="0" tests="1" name="tour.spring.bc.bo.TourBoTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk\jre\bin"/>
+    <property name="java.vm.version" value="17.0-b17"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\xxx\workspaceMgr\TourBCSpring"/>
+    <property name="java.runtime.version" value="1.6.0_21-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="C:\Users\xxx\workspaceMgr\TourBCSpring"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk\jre\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="surefire.real.class.path" value="C:\Users\xxx\AppData\Local\Temp\surefirebooter3158877687503159026.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\xxx\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk\bin;C:\maven\bin;c:\ant\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin"/>
+    <property name="surefire.test.class.path" value="C:\Users\xxx\workspaceMgr\TourBCSpring\target\test-classes;C:\Users\xxx\workspaceMgr\TourBCSpring\target\classes;C:\Users\xxx\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;C:\Users\xxx\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\xxx\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate\3.2.7.GA\hibernate-3.2.7.GA.jar;C:\Users\xxx\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\xxx\.m2\repository\javax\transaction\jta\1.0.1B\jta-1.0.1B.jar;C:\Users\xxx\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\xxx\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\xxx\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\xxx\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\xxx\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\xxx\.m2\repository\commons-collections\commons-collections\2.1.1\commons-collections-2.1.1.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-entitymanager\3.4.0.ga\hibernate-entitymanager-3.4.0.ga.jar;C:\Users\xxx\.m2\repository\org\hibernate\ejb3-persistence\1.0.2.GA\ejb3-persistence-1.0.2.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-commons-annotations\3.1.0.GA\hibernate-commons-annotations-3.1.0.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-core\3.3.0.SP1\hibernate-core-3.3.0.SP1.jar;C:\Users\xxx\.m2\repository\javassist\javassist\3.4.GA\javassist-3.4.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-annotations\3.4.0.GA\hibernate-annotations-3.4.0.GA.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-aop\3.0.5.RELEASE\spring-aop-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-context-support\3.0.5.RELEASE\spring-context-support-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-test\3.0.5.RELEASE\spring-test-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\xxx\.m2\repository\postgresql\postgresql\9.0-801.jdbc4\postgresql-9.0-801.jdbc4.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\xxx"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="user.name" value="xxx"/>
+    <property name="java.class.path" value="C:\Users\xxx\workspaceMgr\TourBCSpring\target\test-classes;C:\Users\xxx\workspaceMgr\TourBCSpring\target\classes;C:\Users\xxx\.m2\repository\junit\junit\4.8.2\junit-4.8.2.jar;C:\Users\xxx\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\xxx\.m2\repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate\3.2.7.GA\hibernate-3.2.7.GA.jar;C:\Users\xxx\.m2\repository\net\sf\ehcache\ehcache\1.2.3\ehcache-1.2.3.jar;C:\Users\xxx\.m2\repository\javax\transaction\jta\1.0.1B\jta-1.0.1B.jar;C:\Users\xxx\.m2\repository\asm\asm-attrs\1.5.3\asm-attrs-1.5.3.jar;C:\Users\xxx\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\xxx\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\xxx\.m2\repository\cglib\cglib\2.1_3\cglib-2.1_3.jar;C:\Users\xxx\.m2\repository\asm\asm\1.5.3\asm-1.5.3.jar;C:\Users\xxx\.m2\repository\commons-collections\commons-collections\2.1.1\commons-collections-2.1.1.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-entitymanager\3.4.0.ga\hibernate-entitymanager-3.4.0.ga.jar;C:\Users\xxx\.m2\repository\org\hibernate\ejb3-persistence\1.0.2.GA\ejb3-persistence-1.0.2.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-commons-annotations\3.1.0.GA\hibernate-commons-annotations-3.1.0.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-core\3.3.0.SP1\hibernate-core-3.3.0.SP1.jar;C:\Users\xxx\.m2\repository\javassist\javassist\3.4.GA\javassist-3.4.GA.jar;C:\Users\xxx\.m2\repository\org\hibernate\hibernate-annotations\3.4.0.GA\hibernate-annotations-3.4.0.GA.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-aop\3.0.5.RELEASE\spring-aop-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-context-support\3.0.5.RELEASE\spring-context-support-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\springframework\spring-test\3.0.5.RELEASE\spring-test-3.0.5.RELEASE.jar;C:\Users\xxx\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\xxx\.m2\repository\postgresql\postgresql\9.0-801.jdbc4\postgresql-9.0-801.jdbc4.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="pl"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.6.0_21"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk\jre\lib\resources.jar;C:\Program Files\Java\jdk\jre\lib\rt.jar;C:\Program Files\Java\jdk\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk\jre\lib\jsse.jar;C:\Program Files\Java\jdk\jre\lib\jce.jar;C:\Program Files\Java\jdk\jre\lib\charsets.jar;C:\Program Files\Java\jdk\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\xxx\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="0.002" classname="tour.spring.bc.bo.TourBoTest" name="initializationError">
+    <error message="No runnable methods" type="java.lang.Exception">java.lang.Exception: No runnable methods
+	at org.junit.runners.BlockJUnit4ClassRunner.validateInstanceMethods(BlockJUnit4ClassRunner.java:177)
+	at org.junit.runners.BlockJUnit4ClassRunner.collectInitializationErrors(BlockJUnit4ClassRunner.java:122)
+	at org.junit.runners.ParentRunner.validate(ParentRunner.java:269)
+	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:66)
+	at org.junit.runners.BlockJUnit4ClassRunner.&lt;init&gt;(BlockJUnit4ClassRunner.java:58)
+	at org.junit.internal.builders.JUnit4Builder.runnerForClass(JUnit4Builder.java:13)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
+	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:29)
+	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:57)
+	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:24)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:51)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:115)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:350)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1021)
+</error>
+  </testcase>
+</testsuite>
